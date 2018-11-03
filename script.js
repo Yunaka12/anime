@@ -7,7 +7,7 @@ $("body").fadeIn(700);
 var elem = document.getElementsByTagName("td");
 
 for(var i =0;i<elem.length;i++){
-  if(i%4==0){
+  if(i%3==0){
     elem[i].className ="modal-class";
     elem[i].id = i;
   }
@@ -15,7 +15,7 @@ for(var i =0;i<elem.length;i++){
 
 var area = document.getElementsByClassName("modal-area");
 for(var i=0;i<area.length;i++){
-  area[i].id = "modal"+i*4;
+  area[i].id = "modal"+i*3;
 }
 
 // $(".modal-class").each(function(){
@@ -33,7 +33,7 @@ var c = test[0].textContent.slice(1);
 
 $(".modal-class").each(function(){
   //jqueryだとうまくできないからjsでやる
-  title = document.getElementsByClassName("modal-class")[$(this).attr("id")/4].textContent.slice(1);
+  title = document.getElementsByClassName("modal-class")[$(this).attr("id")/3].textContent.slice(1);
   //モーダルを設定 addするイメージ
   $("#modal"+$(this).attr("id")).iziModal(
     {
@@ -47,6 +47,5 @@ $(".modal-class").each(function(){
   $(this).on("click",function(event){
     //クリックしたモーダルを表示
       $("#modal"+$(this).attr("id")).iziModal("open");
-    console.log($(this).contents()[1]);
   })
 });

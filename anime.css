@@ -4,19 +4,22 @@ body{
   display: none;
 }
 
-
-h5{
-  color: gray;
-  margin-bottom: 0;
-  margin-top: 0;
+h2{
+  display: inline-block;
+  border-left: 8px solid #005ab3;
+  padding-left: 2px;
+  margin-bottom: 3px;
 }
 
+
 .caution{
-  list-style: none;
-  font-size: 12px;
-  color: gray;
-  padding-left: 0;
-  margin: 5px 0 10px 0;
+margin: 0;
+padding: 0;
+list-style: none;
+margin-bottom: 20px;
+color: gray;
+font-size: 0.8em;
+margin-left: 11px;
 }
 
 table{
@@ -67,31 +70,7 @@ td{
   border-left:1px solid #80bcff;
 }
 
-.title_right{
-  border-right: 1px solid #005ab3;
-}
-
-.title_left{
-  border-left:1px solid #005ab3;
-}
-
-h2{
-  border-left:8px solid #005ab3;
-  padding-left:5px;
-  margin-bottom:0;
-  padding:0;
-}
-
-h6{
-  text-align: right;
-}
-
 a{
   text-decoration: none;
   color:#fff
-}
-
-.title_wrap{
-
-  padding-left: 8px;
 }
