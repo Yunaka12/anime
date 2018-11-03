@@ -5,11 +5,19 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="jquery.tablesorter.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="anime.css">
-<title>好きなアニメ一覧</title>
+<link rel="stylesheet" href="iziModal.min.css">
+<script src="iziModal.min.js" type="text/javascript"></script>
+<title>好きなアニメとマンガ一覧</title>
 </head>
-<h1 id="-">好きなアニメ一覧</h1>
-<h5 id="-span-style-color-gray-span-"><span style="color:gray">忘備録を兼ねて僕が好きなアニメを紹介するページ<br>※表のヘッダークリックで並び替え可</span></h5>
-
+<div class="title_wrap">
+<h1>好きなアニメとマンガ一覧</h1>
+<h3>忘備録を兼ねて僕が好きなアニメ・マンガを紹介するページ</h3>
+</div>
+<ul class="caution">
+  <li>※表のヘッダークリックで並び替え可能</li>
+  <li>※タイトルクリックで詳細表示（対応中）</li>
+</ul>
+<div class="main-contents">
 <table id="sorter">
 <thead>
 <th class="title_left">タイトル</th>
@@ -24,126 +32,273 @@
 <td style="text-align:center">SF</td>
 <td style="text-align:center">3</td>
 </tr>
+
+<div  class="modal-area">
+  <p class="modal-para">おっさんと若者が宇宙人に人造人間にされて世界を守ろう・壊そうとする物語。<br>
+    おっさんが主人公で若者が悪役という少し珍しい設定。</p>
+</div>
+
 <tr>
 <td><span style="font-size:0px">い</span>妹さえいればいい</td>
 <td><span style="font-size:0px">か</span>可児 那由多</td>
 <td style="text-align:center">制作系</td>
 <td style="text-align:center">4</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">妹が欲しい元大学生の奇才小説家とその仲間の物語。<br>
+  ほのぼのとしたストーリーの中にそれぞれのキャラの葛藤なども描かれている。</p>
+</div>
+
 <tr>
 <td><span style="font-size:0px">い</span>一騎当千</td>
 <td><span style="font-size:0px">か</span>関羽 雲長</td>
 <td style="text-align:center">バトル</td>
 <td style="text-align:center">3</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">女子高生たちが戦う。お色気シーンが多い。</p>
+</div>
+
 <tr>
 <td><span style="font-size:0px">い</span>異能バトルは日常系の中で</td>
 <td><span style="font-size:0px">ん</span>なし</td>
 <td style="text-align:center">日常系</td>
 <td style="text-align:center">3</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">中二病の少年少女たちに本当に特殊能力が芽生えてしまった。<br>全くもって非日常な日常系アニメ。</p>
+</div>
+
+
 <tr>
 <td><span style="font-size:0px">う</span>打ち上げ花火</td>
 <td><span style="font-size:0px">お</span>及川 なずな</td>
 <td style="text-align:center">ファンタジー</td>
 <td style="text-align:center">3</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">ある夏の日、特殊な珠の力で何度も時を戻し、逃避行を行う少年少女の物語。<br>
+  絵や音楽などが素晴らしい。</p>
+</div>
+
 <tr>
 <td><span style="font-size:0px">え</span>エロマンガ先生</td>
 <td><span style="font-size:0px">い</span>和泉 紗霧</td>
 <td style="text-align:center">制作系</td>
 <td style="text-align:center">4</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">ひたすら紗霧がかわいい物語。</p>
+</div>
+
+
 <tr>
 <td><span style="font-size:0px">し</span>新世紀エヴァンゲリオン</td>
 <td><span style="font-size:0px">あ</span>綾波 レイ</td>
 <td style="text-align:center">SF</td>
 <td style="text-align:center">3</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">教養としてみるべきSFアニメの金字塔。</p>
+</div>
+
+
+
 <tr>
 <td><span style="font-size:0px">え</span>エルフェンリート</td>
 <td><span style="font-size:0px">ん</span>なし</td>
 <td style="text-align:center">SF</td>
 <td style="text-align:center">3</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">改造されて凶暴な力を手に入れてしまった美少女たちの物語。</p>
+</div>
+
 <tr>
 <td><span style="font-size:0px">え</span>NHKにようこそ</td>
 <td><span style="font-size:0px">さ</span>佐藤 達広</td>
-<td style="text-align:center">制作系</td>
+<td style="text-align:center">青年</td>
 <td style="text-align:center">4</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">ひきこもり大学生といろいろと難ありの仲間たちの引きこもり脱却物語。</p>
+</div>
+
 <tr>
-<td>お兄ちゃんだけど愛さえあれば関係ないよね</td>
+<td><span style="font-size:0px">お</span>お兄ちゃんだけど愛さえあれば関係ないよね</td>
 <td><span style="font-size:0px">な</span>那須原 アナスタシア</td>
 <td style="text-align:center">日常系</td>
 <td style="text-align:center">3</td>
 </tr>
+
+
+
+<div class="modal-area">
+  <p class="modal-para">お兄ちゃんが大好きな妹たちのギャグコメディ。</p>
+</div>
+
+
 <tr>
 <td><span style="font-size:0px">お</span>俺の妹がこんなにかわいいわけがない</td>
 <td><span style="font-size:0px">く</span>黒猫</td>
 <td style="text-align:center">日常系</td>
 <td style="text-align:center">5</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">仲の悪い兄妹とその仲間たちの物語。</p>
+</div>
+
+
+
 <tr>
 <td><span style="font-size:0px">お</span>俺がお嬢様学校に「庶民サンプル」としてゲッツされた件</td>
 <td><span style="font-size:0px">ん</span>なし</td>
 <td style="text-align:center">ギャグ</td>
 <td style="text-align:center">3</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">世間知らずなお嬢様たちにいろいろされるハーレムコメディ。</p>
+</div>
+
+
+
+
 <tr>
 <td><span style="font-size:0px">か</span>カイジ</td>
 <td><span style="font-size:0px">い</span>伊藤 カイジ</td>
-<td style="text-align:center">裏社会</td>
+<td style="text-align:center">ギャンブル</td>
 <td style="text-align:center">5</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">貧乏人で遊ぶ性悪金持ちに抗うギャンブラー男の物語。</p>
+</div>
+
+
 <tr>
 <td><span style="font-size:0px">か</span>GANTZ</td>
 <td><span style="font-size:0px">ん</span>なし</td>
 <td style="text-align:center">SF</td>
-<td style="text-align:center">3</td>
+<td style="text-align:center">4</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">死後、謎だらけの任務に課せられる中で、この世界の真実を知ってしまう。</p>
+</div>
+
+
 <tr>
 <td><span style="font-size:0px">か</span>監獄学園</td>
 <td><span style="font-size:0px">み</span>緑川 花</td>
 <td style="text-align:center">ギャグ</td>
 <td style="text-align:center">5</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">生徒会の陰謀により女子だらけの学校で監禁されてしまう男子高校生の物語。<br>笑える下ネタを極めたギャグアニメ。</p>
+</div>
+
+
 <tr>
 <td><span style="font-size:0px">か</span>神様家族</td>
 <td><span style="font-size:0px">ん</span>なし</td>
 <td style="text-align:center">日常系</td>
 <td style="text-align:center">2</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">人間界の勉強として天界からやってきた神様と天使の物語。</p>
+</div>
+
+
 <tr>
 <td><span style="font-size:0px">か</span>学園黙示録</td>
 <td><span style="font-size:0px">ひ</span>平野コータ</td>
 <td style="text-align:center">SF</td>
 <td style="text-align:center">4</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">突如現れたゾンビから逃げ、戦う高校生たちの物語。</p>
+</div>
+
+
 <tr>
 <td><span style="font-size:0px">き</span>銀魂</td>
 <td><span style="font-size:0px">か</span>桂 小太郎</td>
 <td style="text-align:center">ギャグ</td>
 <td style="text-align:center">2</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">みんな知ってるギャグアニメ！</p>
+</div>
+
 <tr>
 <td><span style="font-size:0px">き</span>君の名は</td>
 <td><span style="font-size:0px">み</span>宮水 三葉</td>
 <td style="text-align:center">ファンタジー</td>
 <td style="text-align:center">3</td>
 </tr>
+
+
+
+<div class="modal-area">
+  <p class="modal-para">みんな知ってる男子高校生と女子高校生の入れ替わりアニメ映画！</p>
+</div>
+
+
 <tr>
 <td><span style="font-size:0px">け</span>ゲート 自衛隊 彼の地にて、斯く戦えり</td>
 <td><span style="font-size:0px">ろ</span>ロゥリィ マーキュリー</td>
-<td style="text-align:center">ファンタジー</td>
+<td style="text-align:center">異世界</td>
 <td style="text-align:center">4</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">人間界と異世界を繋ぐゲートが突如開き、侵略してくる異世界人を制圧しようと自衛隊ががんばる物語。</p>
+</div>
+
+
 <tr>
 <td><span style="font-size:0px">け</span>けいおん!</td>
 <td><span style="font-size:0px">ん</span>なし</td>
 <td style="text-align:center">日常系</td>
 <td style="text-align:center">3</td>
 </tr>
+
+
+<div class="modal-area">
+  <p class="modal-para">女子高生がバンド組んで人生エンジョイする物語。</p>
+</div>
+
 <tr>
 <td><span style="font-size:0px">け</span>ケロロ軍曹</td>
 <td><span style="font-size:0px">と</span>ドロロ兵長</td>
@@ -157,13 +312,13 @@
 <td style="text-align:center">5</td>
 </tr>
 <tr>
-<td>この素晴らしい世界に祝福を！</td>
+<td><span style="font-size:0px">こ</span>この素晴らしい世界に祝福を！</td>
 <td>めぐみん</td>
 <td style="text-align:center">ギャグ</td>
 <td style="text-align:center">5</td>
 </tr>
 <tr>
-<td>この美術部には問題がある！</td>
+<td><span style="font-size:0px">こ</span>この美術部には問題がある！</td>
 <td><span style="font-size:0px">ん</span>なし</td>
 <td style="text-align:center">日常系</td>
 <td style="text-align:center">3</td>
@@ -187,7 +342,7 @@
 <td style="text-align:center">4</td>
 </tr>
 <tr>
-<td>さくら荘のペットな彼女</td>
+<td><span style="font-size:0px">さ</span>さくら荘のペットな彼女</td>
 <td><span style="font-size:0px">し</span>椎名 ましろ</td>
 <td style="text-align:center">制作系</td>
 <td style="text-align:center">3</td>
@@ -195,7 +350,7 @@
 <tr>
 <td><span style="font-size:0px">さ</span>残響のテロル</td>
 <td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">SF</td>
+<td style="text-align:center">青年</td>
 <td style="text-align:center">3</td>
 </tr>
 <tr>
@@ -237,7 +392,7 @@
 <tr>
 <td><span style="font-size:0px">す</span>スピードグラファー</td>
 <td><span style="font-size:0px">て</span>天王洲 神楽</td>
-<td style="text-align:center">SF</td>
+<td style="text-align:center">青年</td>
 <td style="text-align:center">4</td>
 </tr>
 <tr>
@@ -247,7 +402,7 @@
 <td style="text-align:center">5</td>
 </tr>
 <tr>
-<td>すもももももも地上最強のヨメ</td>
+<td><span style="font-size:0px">す</span>すもももももも地上最強のヨメ</td>
 <td><span style="font-size:0px">み</span>巳屋本 いろは</td>
 <td style="text-align:center">バトル</td>
 <td style="text-align:center">3</td>
@@ -261,7 +416,7 @@
 <tr>
 <td><span style="font-size:0px">た</span>だから僕はHができない</td>
 <td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ファンタジー</td>
+<td style="text-align:center">異世界</td>
 <td style="text-align:center">3</td>
 </tr>
 <tr>
@@ -333,7 +488,7 @@
 <tr>
 <td><span style="font-size:0px">は</span>Bus Gamer</td>
 <td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">裏社会</td>
+<td style="text-align:center">ギャンブル</td>
 <td style="text-align:center">3</td>
 </tr>
 <tr>
@@ -351,13 +506,13 @@
 <tr>
 <td><span style="font-size:0px">ひ</span>東のエデン</td>
 <td><span style="font-size:0px">い</span>板津 豊</td>
-<td style="text-align:center">SF</td>
+<td style="text-align:center">青年</td>
 <td style="text-align:center">5</td>
 </tr>
 <tr>
 <td><span style="font-size:0px">ふ</span>Black Lagoon</td>
 <td><span style="font-size:0px">れ</span>レベッカ・リー</td>
-<td style="text-align:center">裏社会</td>
+<td style="text-align:center">青年</td>
 <td style="text-align:center">5</td>
 </tr>
 <tr>
@@ -397,13 +552,13 @@
 <td style="text-align:center">3</td>
 </tr>
 <tr>
-<td>もやしもん</td>
+<td><span style="font-size:0px">も</span>もやしもん</td>
 <td><span style="font-size:0px">ん</span>なし</td>
 <td style="text-align:center">日常系</td>
 <td style="text-align:center">3</td>
 </tr>
 <tr>
-<td>やはり俺の青春ラブコメは間違っている</td>
+<td><span style="font-size:0px">や</span>やはり俺の青春ラブコメは間違っている</td>
 <td><span style="font-size:0px">ん</span>なし</td>
 <td style="text-align:center">日常系</td>
 <td style="text-align:center">3</td>
@@ -429,7 +584,7 @@
 <tr>
 <td><span style="font-size:0px">り</span>リゼロ</td>
 <td><span style="font-size:0px">れ</span>レム</td>
-<td style="text-align:center">SF</td>
+<td style="text-align:center">ファンタジー</td>
 <td style="text-align:center">4</td>
 </tr>
 <tr>
@@ -470,19 +625,31 @@
 </tr>
 <tr>
 <td><span style="font-size:0px">あ</span>アウトブレイク・カンパニー</td>
-<td><span style="font-size:0px">ん</span>なし</td>
+<td><span style="font-size:0px"></span>なし</td>
 <td style="text-align:center">ファンタジー</td>
 <td style="text-align:center">3</td>
+</tr>
+<tr>
+<td><span style="font-size:0px">ほ</span>僕は麻里のなか ※マンガ</td>
+<td><span style="font-size:0px">よ</span>吉崎麻理</td>
+<td style="text-align:center">青年</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td><span style="font-size:0px">し</span>食糧人類 ※マンガ</td>
+<td><span style="font-size:0px">ん</span>なし</td>
+<td style="text-align:center">SF</td>
+<td style="text-align:center">4</td>
 </tr>
 
 </tbody>
 </table>
-<h6 id="-2018-03-19">最終更新 2018/03/22</h6>
-
+<h6 id="-2018-03-19">最終更新 2018/11/03</h6>
+</div>
 <script>
 $(function() {
   $('#sorter').tablesorter();
 });
 </script>
-
+<script src="script.js"></script>
 </html>

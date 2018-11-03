@@ -1,5 +1,23 @@
 body{
   font-family:sans-serif;
+  width: 980px;
+  margin:auto;
+  display: none;
+}
+
+
+h3{
+  color: gray;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.caution{
+  list-style: none;
+  font-size: 12px;
+  color: gray;
+  padding-left: 0;
+  margin: 5px 0 10px 17px;
 }
 
 table{
@@ -8,6 +26,13 @@ table{
   font-size:0.6em;
 }
 
+.modal-area{
+  display: none;
+}
+.modal-para{
+  margin-left: 8px;
+    margin-right: 8px;
+}
 
 @media screen and (min-width:768px){
   table{
@@ -48,8 +73,10 @@ td{
 }
 
 h1{
-  border-left:8px solid #005ab3;
+
   padding-left:5px;
+  margin-bottom:0;
+  padding:0;
 }
 
 h6{
@@ -60,6 +87,8 @@ a{
   text-decoration: none;
   color:#fff
 }
-#okini{
 
+.title_wrap{
+  border-left:8px solid #005ab3;
+  padding-left: 8px;
 }
