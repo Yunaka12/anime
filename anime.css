@@ -1,6 +1,5 @@
 body{
   font-family:sans-serif;
-  width: 980px;
   margin:auto;
   display: none;
 }
@@ -37,6 +36,10 @@ table{
 @media screen and (min-width:768px){
   table{
     font-size:1.0em;
+  }
+
+  body{
+    width: 980px;
   }
 
 }
