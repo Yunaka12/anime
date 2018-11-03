@@ -40,6 +40,8 @@ $(".modal-class").each(function(){
       title:title,
       headerColor: '#005ab3', //ヘッダー部分の色
       overlayColor: 'rgba(0, 0, 0, 0.5)', //モーダルの背景色
+      transitionIn:"fadeInUp",
+      transitionOut:"fadeOutDown"
     }
   );
   $(this).on("click",function(event){
