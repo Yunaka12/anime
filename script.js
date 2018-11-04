@@ -1,6 +1,15 @@
 
 $("body").fadeIn(700);
 
+//
+// var th = document.getElementsByTagName("th");
+// for(var i=0;i<th.length;i++){
+//   th[i].addEventListener("click",function(){
+//   $("table").fadeOut();
+//   $("table").fadeIn();
+//   },false);
+// }
+
 
 
 

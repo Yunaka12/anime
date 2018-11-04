@@ -1,8 +1,3 @@
-
-
-
-
-
 var TableSort = {};
 
 
@@ -55,6 +50,7 @@ TableSort.init = function() {
 
 
 TableSort.initTable = function(t) {
+
   var table = TableSort.tables[t];
   if (table.tHead) {
     for (var y = 0; y < table.tHead.rows.length; y++) {
@@ -75,6 +71,7 @@ TableSort.initTable = function(t) {
 
 
 TableSort.linkCell = function(cell, t, x, y) {
+
   if (TableSort.getLabel(cell)) {
     var link = document.createElement('A');
     link.href = "#Sort_" + t + "_" + x;
@@ -107,6 +104,8 @@ TableSort.getLabel = function(cell) {
 
 
 TableSort.click = function(table, column, mode) {
+
+
   if (!mode.match(/^[_a-z0-9]+$/)) {
     alert("Illegal sorting mode type.");
     return;
