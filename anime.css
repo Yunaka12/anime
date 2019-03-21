@@ -11,6 +11,11 @@ h2{
   margin-bottom: 3px;
 }
 
+h6{
+  text-align: right;
+    margin-right: 8px;
+}
+
 
 .caution{
 margin: 0;
