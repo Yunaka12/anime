@@ -1,890 +1,115 @@
-<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="jquery.tablesorter.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="anime.css">
-<link rel="stylesheet" href="iziModal.min.css">
-<script src="iziModal.min.js" type="text/javascript"></script>
-<title>好きなアニメとマンガ一覧</title>
 </head>
-<!--
-<header>
-<div class="title_wrap">
-<h2>好きなアニメとマンガ</h2>
-</div>
-<ul class="caution">
-  <li>※表のヘッダークリックで並び替え可能</li>
-  <li>※タイトルクリックで詳細表示（対応中）</li>
-</ul>
-</header>
--->
-<div class="main-contents">
-<table id="sorter">
-<thead>
-<th class="title_left">タイトル</th>
-<th>一番好きなキャラ</th>
-<th>ジャンル</th>
-</thead>
-<tbody>
-<tr>
-<td><span style="font-size:0px">い</span>いぬやしき</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">SF</td>
-</tr>
+<body></body>
 
-<div  class="modal-area">
-  <p class="modal-para">おっさんと若者が宇宙人に人造人間にされて世界を守ろう・壊そうとする物語。<br>
-    おっさんが主人公で若者が悪役という少し珍しい設定。</p>
-</div>
-
-<tr>
-<td><span style="font-size:0px">い</span>妹さえいればいい</td>
-<td><span style="font-size:0px">か</span>可児 那由多</td>
-<td style="text-align:center">制作系</td>
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">妹が欲しい元大学生の奇才小説家とその仲間の物語。<br>
-  ほのぼのとしたストーリーの中にそれぞれのキャラの葛藤なども描かれている。</p>
-</div>
-
-<tr>
-<td><span style="font-size:0px">い</span>一騎当千</td>
-<td><span style="font-size:0px">か</span>関羽 雲長</td>
-<td style="text-align:center">バトル</td>
-
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">女子高生たちが戦う。お色気シーンが多い。</p>
-</div>
-
-<tr>
-<td><span style="font-size:0px">い</span>異能バトルは日常系の中で</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">日常系</td>
-
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">中二病の少年少女たちに本当に特殊能力が芽生えてしまった。<br>全くもって非日常な日常系アニメ。</p>
-</div>
-
-
-<tr>
-<td><span style="font-size:0px">う</span>打ち上げ花火</td>
-<td><span style="font-size:0px">お</span>及川 なずな</td>
-<td style="text-align:center">ファンタジー</td>
-
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">ある夏の日、特殊な珠の力で何度も時を戻し、逃避行を行う少年少女の物語。<br>
-  絵や音楽などが素晴らしい。</p>
-</div>
-
-<tr>
-<td><span style="font-size:0px">え</span>エロマンガ先生</td>
-<td><span style="font-size:0px">い</span>和泉 紗霧</td>
-<td style="text-align:center">制作系</td>
-
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">ひたすら紗霧がかわいい物語。</p>
-</div>
-
-
-<tr>
-<td><span style="font-size:0px">し</span>新世紀エヴァンゲリオン</td>
-<td><span style="font-size:0px">あ</span>綾波 レイ</td>
-<td style="text-align:center">SF</td>
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">教養としてみるべきSFアニメの金字塔。</p>
-</div>
-
-
-
-<tr>
-<td><span style="font-size:0px">え</span>エルフェンリート</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">SF</td>
-
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">改造されて凶暴な力を手に入れてしまった美少女たちの物語。</p>
-</div>
-
-<tr>
-<td><span style="font-size:0px">え</span>NHKにようこそ</td>
-<td><span style="font-size:0px">さ</span>佐藤 達広</td>
-<td style="text-align:center">青年</td>
-
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">ひきこもり大学生といろいろと難ありの仲間たちの引きこもり脱却物語。</p>
-</div>
-
-<tr>
-<td><span style="font-size:0px">お</span>お兄ちゃんだけど愛さえあれば関係ないよね</td>
-<td><span style="font-size:0px">な</span>那須原 アナスタシア</td>
-<td style="text-align:center">日常系</td>
-
-</tr>
-
-
-
-<div class="modal-area">
-  <p class="modal-para">お兄ちゃんが大好きな妹たちのギャグコメディ。</p>
-</div>
-
-
-<tr>
-<td><span style="font-size:0px">お</span>俺の妹がこんなにかわいいわけがない</td>
-<td><span style="font-size:0px">く</span>黒猫</td>
-<td style="text-align:center">日常系</td>
-
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">仲の悪い兄妹とその仲間たちの物語。</p>
-</div>
-
-
-
-<tr>
-<td><span style="font-size:0px">お</span>俺がお嬢様学校に「庶民サンプル」としてゲッツされた件</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ギャグ</td>
-
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">世間知らずなお嬢様たちにいろいろされるハーレムコメディ。</p>
-</div>
-
-
-
-
-<tr>
-<td><span style="font-size:0px">か</span>カイジ</td>
-<td><span style="font-size:0px">い</span>伊藤 カイジ</td>
-<td style="text-align:center">ギャンブル</td>
-
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">貧乏人で遊ぶ性悪金持ちに抗うギャンブラー男の物語。</p>
-</div>
-
-
-<tr>
-<td><span style="font-size:0px">か</span>GANTZ</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">SF</td>
-
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">死後、謎だらけの任務に課せられる中で、この世界の真実を知ってしまう。</p>
-</div>
-
-
-<tr>
-<td><span style="font-size:0px">か</span>監獄学園</td>
-<td><span style="font-size:0px">み</span>緑川 花</td>
-<td style="text-align:center">ギャグ</td>
-
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">生徒会の陰謀により女子だらけの学校で監禁されてしまう男子高校生の物語。<br>笑える下ネタを極めたギャグアニメ。</p>
-</div>
-
-
-<tr>
-<td><span style="font-size:0px">か</span>神様家族</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">日常系</td>
-
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">人間界の勉強として天界からやってきた神様と天使の物語。</p>
-</div>
-
-
-<tr>
-<td><span style="font-size:0px">か</span>学園黙示録</td>
-<td><span style="font-size:0px">ひ</span>平野コータ</td>
-<td style="text-align:center">SF</td>
-
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">突如現れたゾンビから逃げ、戦う高校生たちの物語。</p>
-</div>
-
-
-<tr>
-<td><span style="font-size:0px">き</span>銀魂</td>
-<td><span style="font-size:0px">か</span>桂 小太郎</td>
-<td style="text-align:center">ギャグ</td>
-
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">みんな知ってるギャグアニメ！</p>
-</div>
-
-<tr>
-<td><span style="font-size:0px">き</span>君の名は</td>
-<td><span style="font-size:0px">み</span>宮水 三葉</td>
-<td style="text-align:center">ファンタジー</td>
-
-</tr>
-
-
-
-<div class="modal-area">
-  <p class="modal-para">みんな知ってる男子高校生と女子高校生の入れ替わりアニメ映画！</p>
-</div>
-
-
-<tr>
-<td><span style="font-size:0px">け</span>ゲート 自衛隊 彼の地にて、斯く戦えり</td>
-<td><span style="font-size:0px">ろ</span>ロゥリィ マーキュリー</td>
-<td style="text-align:center">異世界</td>
-
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">人間界と異世界を繋ぐゲートが突如開き、侵略してくる異世界人を制圧しようと自衛隊ががんばる物語。</p>
-</div>
-
-
-<tr>
-<td><span style="font-size:0px">け</span>けいおん!</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">日常系</td>
-
-</tr>
-
-
-<div class="modal-area">
-  <p class="modal-para">女子高生がバンド組んで人生エンジョイする物語。</p>
-</div>
-
-<tr>
-<td><span style="font-size:0px">け</span>ケロロ軍曹</td>
-<td><span style="font-size:0px">と</span>ドロロ兵長</td>
-<td style="text-align:center">ギャグ</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">かわいい侵略者とおっかない地球人の物語</p>
-</div>
-
-
-</tr>
-<tr>
-<td><span style="font-size:0px">こ</span>極黒のブリュンヒルデ</td>
-<td><span style="font-size:0px">た</span>鷹鳥 小鳥</td>
-<td style="text-align:center">SF</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">謎の研究所から逃げ出してきた少女たち。彼女らは皆、謎の特殊能力を持っていた。その能力の裏に隠された悲しくグロテスクな真実とは。<br></p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">こ</span>この素晴らしい世界に祝福を！</td>
-<td>めぐみん</td>
-<td style="text-align:center">ギャグ</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">引きこもりの青年、死後に勇者として異世界に転生。でも異世界は予想以上に平和だった。<br>そんな世界で仲間たちと繰り広げる痛快ドタバタギャグコメディ。</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">こ</span>この美術部には問題がある！</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">日常系</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">問題だらけの美術部に入部してまった。いったい私、どうなちゃうの～。</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">こ</span>コードギアス反逆のルルーシュ</td>
-<td><span style="font-size:0px">る</span>ルルーシュ</td>
-<td style="text-align:center">ロボ</td>
-
-
-
-<div class="modal-area">
-  <p class="modal-para">このアニメに関してはとても数行では語れない。</p>
-</div>
-
-
-</tr>
-<tr>
-<td><span style="font-size:0px">さ</span>冴えない彼女の育て方</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">制作系</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">ゲーム制作の部活内で繰り広げられるふわっとした青春ラブコメディ。</p>
-</div>
-
-
-</tr>
-<tr>
-<td><span style="font-size:0px">さ</span>坂本ですが？</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ギャグ</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">ジェントルマンでエレガント。完全なる男子高校生・坂本。誰であっても彼の完全を崩すことはできない。絶対にだ。</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">さ</span>さくら荘のペットな彼女</td>
-<td><span style="font-size:0px">し</span>椎名 ましろ</td>
-<td style="text-align:center">制作系</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">学内の問題児のみが集まるアパート・さくら荘。そこへさらなる問題児・ましろがやってきて・・・。</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">さ</span>残響のテロル</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">青年</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">政府は謎の青年たちのテロまがいの行為に振り回されていた。しかし、彼らの行動の裏には大きな秘密、決断があった。</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">さ</span>サマーウォーズ</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">SF</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">この世界を守るために、僕は仮想世界で戦う。</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">し</span>屍鬼</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">SF</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">山奥の小さな村。そこでは死んだはずの住民が夜中になって起き上がり、人間の血を求めて徘徊していた。</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">し</span>地獄少女</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ファンタジー</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">憎い人間を地獄へ落としてくれるとウワサの地獄通信。そんなサイトが実在した。</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">し</span>地獄先生ぬーべー</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">バトル</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">悪魔の力を見に宿した先生が、今日もまた生徒たちを悪魔から守るために戦う。</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">し</span>下ネタという概念が存在しない退屈な世界</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ギャグ</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">その世界では、下ネタが禁止されていた。そんなつまらない世界をぶち壊すために立ち上がった組織、それがSOXである。<br>
-    この世界に下ネタを取り戻すために翻弄する少年少女の物語である。
-  </p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">し</span>進撃の巨人</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">SF</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">巨人は人間を喰らう。しかし、壁の中にいる限り、巨人は人間を襲ってこない。そんな常識が崩れてしまったのはいつからだろうか。</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">す</span>スピードグラファー</td>
-<td><span style="font-size:0px">て</span>天王洲 神楽</td>
-<td style="text-align:center">青年</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">変態写真家ジャーナリストと謎の少女の逃避行。政府の陰謀に立ち向かい、この世の真実を暴く。</p>
-</div>
-
-
-
-</tr>
-<tr>
-<td><span style="font-size:0px">す</span>涼宮ハルヒの憂鬱</td>
-<td><span style="font-size:0px">あ</span>朝比奈 みくる</td>
-<td style="text-align:center">SF</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">退屈な日々に飽き飽きしていた何もかもが完璧な女子高生・涼宮ハルヒ。非日常を探すため立ち上げたSOS団に無理やり入部させられた
-  平凡万歳男子高校生キョン。非日常なんてありえない。そんな常識はハルヒの前では一切通じなかった。部員は宇宙人、未来人に超能力者？いったいこの世界はどうなってるんだ。</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">す</span>すもももももも地上最強のヨメ</td>
-<td><span style="font-size:0px">み</span>巳屋本 いろは</td>
-<td style="text-align:center">バトル</td>
-
-
-
-<div class="modal-area">
-  <p class="modal-para">だから武道なんか嫌いなんだよ！勉強大好きな主人公のもとに「いいなずけ」としてやってきたのは
-  武道一筋の頭のねじがぶっ飛んだ少女だった。</p>
-</div>
-
-
-</tr>
-<tr>
-<td><span style="font-size:0px">そ</span>ソードアートオンライン</td>
-<td><span style="font-size:0px">あ</span>アスナ</td>
-<td style="text-align:center">SF</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">単なるゲームオタクの引きこもりの少年が、ゲームの世界でイキリ倒し、美少女にチヤホヤされる胸糞アニメ。（褒めてる）</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">た</span>だから僕はHができない</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">異世界</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">ドスケベな男子高校生、セクシー死神と世界を守る。</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">た</span>www.working</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ギャグ</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">変な人しかいないバイト先で繰り広げれらるラブコメディ。</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">た</span>ダンジョンに出会いを求めるのは間違っているだろうか</td>
-<td><span style="font-size:0px">へ</span>ヘスティア</td>
-<td style="text-align:center">ファンタジー</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">異世界もののようで実際はほぼラブコメディ。</p>
-</div>
-
-
-</tr>
-<tr>
-<td><span style="font-size:0px">ち</span>中二病でも恋がしたい</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">日常系</td>
-
-
-
-<div class="modal-area">
-  <p class="modal-para">中二病だって恋がしたいんじゃ！あかんのか？！あ？</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">て</span>デスノート</td>
-<td><span style="font-size:0px">あ</span>弥 海砂</td>
-<td style="text-align:center">ファンタジー</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">天才高校生が拾ったノート。そこに名前を書かれたものは必ず死ぬ。</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">と</span>東京グール</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">SF</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">知ってる？この世界には人間の皮をかぶった化け物がいるんだよ。そんな化け物に、平凡な高校生がなってしまった。</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">と</span>ドラゴンボール</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">バトル</td>
-
-
-<div class="modal-area">
-  <p class="modal-para">七つ集めるとなんでも願いが叶う玉、ドラゴンボール。その玉を探しに、孫悟空は旅に出る。</p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">な</span>NARUTO</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">バトル</td>
-
-
-<div class="modal-area">
-  <p class="modal-para"></p>
-</div>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">に</span>日常</td>
-<td><span style="font-size:0px">な</span>長野原みお</td>
-<td style="text-align:center">ギャグ</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">に</span>NEW GAME!</td>
-<td><span style="font-size:0px">さ</span>桜 ねね</td>
-<td style="text-align:center">制作系</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">は</span>バカとテストと召喚獣</td>
-<td><span style="font-size:0px">ひ</span>姫路 瑞希</td>
-<td style="text-align:center">ギャグ</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">は</span>鋼の錬金術師</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ファンタジー</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">は</span>Bus Gamer</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ギャンブル</td>
-
-</tr>
-<tr>
-<td>はたらく魔王さま</td>
-<td><span style="font-size:0px">あ</span>芦屋 四郎</td>
-<td style="text-align:center">日常系</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">は</span>ハンターハンター</td>
-<td><span style="font-size:0px">き</span>キルア</td>
-<td style="text-align:center">バトル</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">ひ</span>東のエデン</td>
-<td><span style="font-size:0px">い</span>板津 豊</td>
-<td style="text-align:center">青年</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">ふ</span>Black Lagoon</td>
-<td><span style="font-size:0px">れ</span>レベッカ・リー</td>
-<td style="text-align:center">青年</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">ふ</span>Blood+</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ファンタジー</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">へ</span>変ゼミ</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ギャグ</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">へ</span>変態王子と笑わない猫</td>
-<td><span style="font-size:0px">あ</span>小豆 梓</td>
-<td style="text-align:center">ファンタジー</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">ほ</span>僕らはみんな河合荘</td>
-<td><span style="font-size:0px">わ</span>渡辺 彩花</td>
-<td style="text-align:center">ギャグ</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">ほ</span>僕は友達が少ない</td>
-<td><span style="font-size:0px">は</span>羽瀬川 小鳩</td>
-<td style="text-align:center">ギャグ</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">ま</span>魔装学園H×H</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ギャグ</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">も</span>もやしもん</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">日常系</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">や</span>やはり俺の青春ラブコメは間違っている</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">日常系</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">ゆ</span>遊戯王</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">バトル</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">ゆ</span>勇者になれなかった僕はしぶしぶ就職を決意しました</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">日常系</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">よ</span>幼女戦記</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ファンタジー</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">り</span>リゼロ</td>
-<td><span style="font-size:0px">れ</span>レム</td>
-<td style="text-align:center">ファンタジー</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">れ</span>レミゼラブル少女コゼット</td>
-<td><span style="font-size:0px">し</span>ジャン・ヴァルジャン</td>
-<td style="text-align:center">童話</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">ろ</span>ローゼンメイデン</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ファンタジー</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">わ</span>ワンパンマン</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">バトル</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">し</span>STEINS;GATE</td>
-<td><span style="font-size:0px">ふ</span>フェイリス ニャンニャン</td>
-<td style="text-align:center">SF</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">ふ</span>ブレンド・S</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">日常系</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">け</span>ゲーマーズ！</td>
-<td><span style="font-size:0px">あ</span>亜玖璃</td>
-<td style="text-align:center">ギャグ</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">あ</span>アウトブレイク・カンパニー</td>
-<td><span style="font-size:0px"></span>なし</td>
-<td style="text-align:center">ファンタジー</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">ほ</span>僕は麻里のなか ※マンガ</td>
-<td><span style="font-size:0px">よ</span>吉崎麻理</td>
-<td style="text-align:center">青年</td>
-
-</tr>
-<tr>
-<td><span style="font-size:0px">し</span>食糧人類 ※マンガ</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">SF</td>
-</tr>
-
-<tr>
-<td><span style="font-size:0px">な</span>なれるSE ※ラノベ</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">青年</td>
-</tr>
-
-<tr>
-<td><span style="font-size:0px">じ</span>女子高生に殺されたい　※マンガ</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">青年</td>
-</tr>
-
-<tr>
-<td><span style="font-size:0px">ひ</span>漂流ネットカフェ ※マンガ</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">青年</td>
-</tr>
-
-<tr>
-<td><span style="font-size:0px">す</span>スクールデイズ</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">青年</td>
-</tr>
-
-<tr>
-<td><span style="font-size:0px">こ</span>小林さんちのメイドラゴン ※ラノベ</td>
-<td><span style="font-size:0px">か</span>カンナ</td>
-<td style="text-align:center">ギャグ</td>
-</tr>
-
-<tr>
-<td><span style="font-size:0px">え</span>Angel Beats!</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ファンタジー</td>
-</tr>
-
-<tr>
-<td><span style="font-size:0px">せ</span>青春ブタ野郎はバニーガール先輩の夢を見ない</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">青年</td>
-</tr>
-
-<tr>
-<td><span style="font-size:0px">て</span>転生したらスライムだった件</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ファンタジー</td>
-</tr>
-
-<tr>
-<td><span style="font-size:0px">い</span>苺ましまろ</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ファンタジー</td>
-</tr>
-
-<tr>
-<td><span style="font-size:0px">ま</span>マギ</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">ファンタジー</td>
-</tr>
-
-<tr>
-<td><span style="font-size:0px">り</span>リベンジＨ</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">青年</td>
-</tr>
-
-<tr>
-<td><span style="font-size:0px">ふ</span>不能犯</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">青年</td>
-</tr>
-
-<tr>
-<td><span style="font-size:0px">あ</span>惡の華</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">青年</td>
-</tr>
-
-<tr>
-<td><span style="font-size:0px">な</span>七つの大罪</td>
-<td><span style="font-size:0px">ん</span>なし</td>
-<td style="text-align:center">バトル</td>
-</tr>
-
-</tbody>
-</table>
-<h6 id="-2018-03-19">最終更新 2019/11/11</h6>
-</div>
 <script>
-$(function() {
-  $('#sorter').tablesorter({
-    sortList: [ [ 0, 0 ] ]
-  });
-});
+ const anime = [
+"いぬやしき",
+"妹さえいればいい",
+"一騎当千",
+"異能バトルは日常系の中で",
+"打ち上げ花火",
+"エロマンガ先生",
+"新世紀エヴァンゲリオン",
+"エルフェンリート",
+"NHKにようこそ",
+"お兄ちゃんだけど愛さえあれば関係ないよね",
+"俺の妹がこんなにかわいいわけがない",
+"俺がお嬢様学校に「庶民サンプル」としてゲッツされた件",
+"カイジ",
+"GANTZ",
+"監獄学園",
+"神様家族",
+"学園黙示録",
+"銀魂",
+"君の名は",
+"ゲート 自衛隊 彼の地にて、斯く戦えり",
+"けいおん!",
+"ケロロ軍曹",
+"極黒のブリュンヒルデ",
+"この素晴らしい世界に祝福を！",
+"この美術部には問題がある！",
+"コードギアス反逆のルルーシュ",
+"冴えない彼女の育て方",
+"坂本ですが？",
+"さくら荘のペットな彼女",
+"残響のテロル",
+"サマーウォーズ",
+"屍鬼",
+"地獄少女",
+"地獄先生ぬーべー",
+"下ネタという概念が存在しない退屈な世界",
+"進撃の巨人",
+"スピードグラファー",
+"涼宮ハルヒの憂鬱",
+"すもももももも地上最強のヨメ",
+"ソードアートオンライン",
+"だから僕はHができない",
+"www.working",
+"ダンジョンに出会いを求めるのは間違っているだろうか",
+"中二病でも恋がしたい",
+"デスノート",
+"東京グール",
+"ドラゴンボール",
+"NARUTO",
+"日常",
+"NEW GAME!",
+"バカとテストと召喚獣",
+"鋼の錬金術師",
+"Bus Gamer",
+"はたらく魔王さま",
+"ハンターハンター",
+"東のエデン",
+"Black Lagoon",
+"Blood+",
+"変ゼミ",
+"変態王子と笑わない猫",
+"僕らはみんな河合荘",
+"僕は友達が少ない",
+"魔装学園H×H",
+"もやしもん",
+"やはり俺の青春ラブコメは間違っている",
+"遊戯王",
+"勇者になれなかった僕はしぶしぶ就職を決意しました",
+"幼女戦記",
+"リゼロ",
+"レミゼラブル少女コゼット",
+"ローゼンメイデン",
+"ワンパンマン",
+"STEINS;GATE",
+"ブレンド・S",
+"ゲーマーズ！",
+"アウトブレイク・カンパニー",
+"僕は麻里のなか ※マンガ",
+"食糧人類 ※マンガ",
+"なれるSE ※ラノベ",
+"女子高生に殺されたい　※マンガ",
+"漂流ネットカフェ ※マンガ",
+"スクールデイズ",
+"小林さんちのメイドラゴン ※ラノベ",
+"Angel Beats!",
+"青春ブタ野郎はバニーガール先輩の夢を見ない",
+"転生したらスライムだった件",
+"苺ましまろ",
+"マギ",
+"リベンジＨ",
+"不能犯",
+"惡の華",
+"七つの大罪",
+"食戟のソーマ",
+"BORUTO",
+"イエスタデイを歌って",
+"ようこそ実力至上主義の教室へ",
+"異世界はスマートフォンとともに。",
+"中間管理録トネガワ"
+];
 
+for(let i =0; i<anime.length;i++){
+  let p = document.createElement("p");
+  p.innerText = anime[i];
+  document.body.appendChild(p);
+}
 </script>
-<script src="script.js"></script>
-
 </html>
